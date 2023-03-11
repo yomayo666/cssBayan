@@ -1,0 +1,71 @@
+body{
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: beige;
+    font-size: calc( (100vw - 30rem)/50 * 0.5 + 1rem);
+}
+h1{
+    text-align: center;
+}
+section{
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+article{
+    border-style: solid;
+    border-width: 0.1rem;
+    cursor: pointer;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding: 2vh 2vh;
+}
+article img{
+    margin-top: 1rem;
+    max-width: 90%;
+}
+article label{
+    display: block;
+    cursor: pointer;
+    color: blue;
+}
+
+.input1:checked ~ div{
+    display: none;
+}
+
+.text{
+    display: none;
+}
+input:checked ~ div{
+    display: block;
+}
+input:checked ~ label{
+    color: black;
+}
+input{
+    appearance: none;
+    position: absolute;
+}
+.title1{
+    color: black;
+}
+.input1:checked ~ label{
+    color: blue;
+}
+#section1:hover label{
+    color: rgb(0, 0, 0);
+}
+footer p{
+    max-width: 50%;
+    border-top: brown;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+
+}
