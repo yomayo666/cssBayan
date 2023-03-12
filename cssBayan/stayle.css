@@ -1,0 +1,109 @@
+body{
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: beige;
+    font-size: calc( (100vw - 30rem)/50 * 0.5 + 1rem);
+}
+h1{
+    text-align: center;
+}
+section{
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+article{
+    border-style: solid;
+    border-width: 0.1rem;
+    cursor: pointer;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding: 2vh 1vh;
+}
+article img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+article label{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    color: blue;
+    margin-left: 1vh;      
+}
+
+.text{
+    max-height: 0; overflow: hidden;
+    transition: all 0.5s;
+    
+}
+.faq-text{
+    max-height: 100vw; overflow: hidden;
+    transition: all 2s;
+}
+input:checked ~ div{
+    max-height: 100vw; overflow: hidden;
+    transition: all 1s;
+}
+.input1:checked ~ div{
+    max-height: 0; overflow: hidden;
+    transition: all 0.4s;
+    
+    
+}
+input:checked ~ label{
+    color: black;
+}
+input{
+    appearance: none;
+    position: absolute;
+}
+.title1{
+    color: black;
+
+}
+.title1::after{
+    font-size: 300%;
+    margin-top: -1rem;
+    content: '-';
+}
+label:after{
+    font-size: 200%;
+    margin-top: 0rem;
+    content: '+';
+}
+.input1:checked ~ label{
+    color: blue;
+}
+.input1:checked ~ .title1::after{
+    font-size: 200%;
+    margin-top: 0rem;
+    content: '+';
+}
+input:checked ~ .faq-title::after{
+    font-size: 300%;
+    margin-top: -1rem;
+    content: '-';
+}
+#section1:hover label{
+    color: rgb(0, 0, 0);
+}
+#section1 article:active label{
+    transition: all 0.5s;
+    color: blue;
+}
+footer p{
+    max-width: 50%;
+    border-top: brown;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+
+}
