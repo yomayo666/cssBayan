@@ -93,6 +93,10 @@ input:checked ~ .faq-title::after{
 #section1:hover label{
     color: rgb(0, 0, 0);
 }
+#section1 article:active label{
+    transition: all 0.3s;
+    color: blue;
+}
 footer p{
     max-width: 50%;
     border-top: brown;
