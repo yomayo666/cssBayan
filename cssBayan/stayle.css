@@ -94,7 +94,7 @@ input:checked ~ .faq-title::after{
     color: rgb(0, 0, 0);
 }
 #section1 article:active label{
-    transition: all 0.3s;
+    transition: all 0.5s;
     color: blue;
 }
 footer p{
